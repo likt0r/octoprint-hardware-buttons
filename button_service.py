@@ -8,8 +8,8 @@ import requests
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
-LONG_PRESS_TIMEOUT = os.getenv('LONG_PRESS_TIMEOUT')
-LIGHT_BUTTON_GPIO = os.getenv('LIGHT_BUTTON_GPIO')
+LONG_PRESS_TIMEOUT = int(os.getenv('LONG_PRESS_TIMEOUT'))
+LIGHT_BUTTON_GPIO = int(os.getenv('LIGHT_BUTTON_GPIO'))
 
 time = {"last": datetime.datetime.now()}
 long_click_timeout = LONG_PRESS_TIMEOUT
