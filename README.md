@@ -1,1 +1,8 @@
 # octoprint-hardware-buttons
+## install
+* Create .env file with content
+```txt
+LONG_PRESS_TIMEOUT=3
+API_KEY=YOUR_API_KEY
+```
+* run install-service.sh script
